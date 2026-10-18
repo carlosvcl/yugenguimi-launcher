@@ -31,11 +31,5 @@ window.YUGEN_SITE = Object.freeze({
     {id:"ingame-hud",title:"HUD em partida",description:"FPS, CPS, coordenadas, ping, sessão e keystrokes diretamente em jogo.",category:"jogo",image:'assets/screenshots/ingame-hud.webp'},
     {id:"control-center-hud",title:"Control Center 8.0",description:"Painel de módulos dentro do jogo, com categorias, busca e estados visuais.",category:"jogo",image:'assets/screenshots/control-center-hud.webp'},
     {id:"hud-editor",title:"HUD Editor 9.0",description:"Edição visual dos módulos, com controles de visibilidade, reset, configuração e salvamento.",category:"jogo",image:'assets/screenshots/hud-editor.webp'},
-    {id:"inicio-16-realt",title:"Início do Launcher — teste Windows",description:"Launcher YugenYumi 16.0.0-dev instalado e aberto no Windows",category:"interface",image:"assets/screenshots/inicio-16-realt.webp"},
-    {id:"cosmeticos-16-realt",title:"Preview 3D — teste Windows",description:"Personagem visível no Launcher, ainda com acabamento e controles pendentes",category:"recursos",image:"assets/screenshots/cosmeticos-16-realt.webp"},
-    {id:"wings-dragon-16-realt",title:"Wings Dragon — teste real",description:"Dragon no Minecraft 1.8.9; geometria ainda precisa de revisão",category:"jogo",image:"assets/screenshots/wings-dragon-16-realt.webp"},
-    {id:"wings-angel-16-realt",title:"Wings Angel — teste real",description:"Angel no Minecraft 1.8.9; modelo de penas ainda reprovado",category:"jogo",image:"assets/screenshots/wings-angel-16-realt.webp"},
-    {id:"discord-16-realt",title:"Discord Rich Presence com YY",description:"Ícone YY registrado e aparecendo na atividade Jogando",category:"recursos",image:"assets/screenshots/discord-16-realt.webp"},
-    {id:"setup-16-realt",title:"Setup NSIS histórico — antes",description:"Instalador 16.0.0-dev anterior; interface clássica que a fase 16.6.1 quer substituir",category:"sistema",image:"assets/screenshots/setup-16-realt.webp"},
   ]
 });
