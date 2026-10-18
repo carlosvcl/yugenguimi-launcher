@@ -7,7 +7,7 @@ window.YUGEN_SITE = Object.freeze({
   // Somente após um GitHub Release verificado inclua hash/tamanho/canal:
   releaseInfo: null,
   // Substitua por links reais do seu projeto caso use outro repositório.
-  releaseUrl: null, // configure somente quando o release oficial do Client existir
+  releaseUrl: 'https://github.com/carlosvcl/yugenguimi-launcher/releases/download/v16.6.1-dev-beta/YugenYumi-Setup-16.6.1-dev-BETA.exe', // link confirmado do instalador Beta publicado no GitHub Releases
   repositoryUrl: 'https://github.com/carlosvcl/yugenguimi-launcher',
   screenshots: [
     {id:"inicio",title:"Início do Launcher",description:"A tela inicial com acesso à conta, novidades e ambiente do jogo.",category:"interface",image:'assets/screenshots/inicio.webp'},
