@@ -8,7 +8,7 @@ window.YUGEN_SITE = Object.freeze({
   releaseInfo: null,
   // Substitua por links reais do seu projeto caso use outro repositório.
   releaseUrl: null, // configure somente quando o release oficial do Client existir
-  repositoryUrl: 'https://github.com/carlosvcl/yugenyumi-site',
+  repositoryUrl: 'https://github.com/carlosvcl/yugenguimi-launcher',
   screenshots: [
     {id:"inicio",title:"Início do Launcher",description:"A tela inicial com acesso à conta, novidades e ambiente do jogo.",category:"interface",image:'assets/screenshots/inicio.webp'},
     {id:"modulos",title:"Módulos",description:"Organização de HUDs e recursos por categoria, com controles individuais.",category:"recursos",image:'assets/screenshots/modulos.webp'},
