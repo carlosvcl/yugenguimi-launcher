@@ -7,12 +7,12 @@
       return parsed.protocol === 'https:' ? parsed.href : null;
     } catch { return null; }
   };
-  const releaseURL = safeHttps(conf.releaseUrl);
+  const releaseURL = safeHttps(conf.releaseUrl) || safeHttps(document.querySelector("[data-release-link]")?.getAttribute("href"));
   const repositoryURL = safeHttps(conf.repositoryUrl);
   const version = typeof conf.version === 'string' ? conf.version.trim().slice(0, 40) : '16.6.1-dev';
   document.querySelectorAll('[data-version]').forEach(el => { el.textContent = version; });
   document.querySelectorAll('[data-release-link]').forEach(el => {
-    if(releaseURL){el.href=releaseURL;return;}
+    if(releaseURL){el.href=releaseURL;el.removeAttribute("aria-disabled");el.removeAttribute("title");return;}
     el.removeAttribute('href');el.setAttribute('aria-disabled','true');
     el.setAttribute('title','Download ainda não publicado: aguardando validação da versão beta.');
     el.addEventListener('click',e=>e.preventDefault());
