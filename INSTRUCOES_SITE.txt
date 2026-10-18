@@ -1,0 +1,5 @@
+Site YugenYumi 16.6.1-dev: PREVIEW, não publicado.
+Este pacote preserva o diretório site/, scripts/check-site.js e .github/workflows/pages.yml na estrutura esperada pelo workflow.
+Execute: node scripts/check-site.js
+Para teste local: cd site; python -m http.server 8000
+NÃO execute push/deploy sem aprovação. Downloads desabilitados.

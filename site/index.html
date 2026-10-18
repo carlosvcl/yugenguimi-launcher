@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#050816">
+  <meta name="description" content="YugenYumi Client: uma experiência personalizada para Minecraft Java 1.8.9. Launcher, HUD Editor, Control Center, Keystrokes e wallpapers. Conheça a versão beta para Windows.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="YugenYumi Client — Seu Minecraft. No seu estilo.">
+  <meta property="og:description" content="Um client de Minecraft 1.8.9 em evolução, com interface própria, HUDs editáveis e uma identidade visual única.">
+  <!-- Configure URLs absolutas og:image, og:url e canonical SOMENTE ao confirmar o dominio publico. -->
+  <meta property="og:image:alt" content="Marca oficial YugenYumi: símbolo YY prateado, lua e reflexos roxos">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>YugenYumi Client — Seu Minecraft. No seu estilo.</title>
+  <link rel="icon" href="assets/yugenyumi-symbol.png" type="image/png">
+  <link rel="stylesheet" href="styles.css">
+  <script src="site-config.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <svg xmlns="http://www.w3.org/2000/svg" class="icon-defs" aria-hidden="true" focusable="false">
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></symbol>
+    <symbol id="i-arrow-up" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 3v12m-4-4 4 4 4-4M4 17v3h16v-3"/></symbol>
+    <symbol id="i-grid" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></symbol>
+    <symbol id="i-sliders" viewBox="0 0 24 24"><path d="M4 7h16M4 17h16"/><circle cx="9" cy="7" r="3"/><circle cx="16" cy="17" r="3"/></symbol>
+    <symbol id="i-layers" viewBox="0 0 24 24"><path d="m12 2 9 6-9 6-9-6 9-6Zm-9 11 9 6 9-6M3 17l9 5 9-5"/></symbol>
+    <symbol id="i-monitor" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M8 22h8m-4-4v4"/></symbol>
+    <symbol id="i-mouse" viewBox="0 0 24 24"><rect x="5" y="2" width="14" height="20" rx="7"/><path d="M12 2v8m-7 0h14"/></symbol>
+    <symbol id="i-move" viewBox="0 0 24 24"><path d="m12 2 3 3m-3-3L9 5m3-3v20m0 0-3-3m3 3 3-3M2 12l3-3m-3 3 3 3m-3-3h20m0 0-3 3m3-3-3-3"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="m12 2 9 4v5c0 6-4 9-9 11-5-2-9-5-9-11V6l9-4Zm-4 10 3 3 5-6"/></symbol>
+    <symbol id="i-chevron" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
+    <symbol id="i-github" viewBox="0 0 24 24"><path d="M9 19c-4 1-4-2-6-2m12 4v-3a3 3 0 0 0-.8-2.3c3-.3 6-1.4 6-6.3a5 5 0 0 0-1.4-3.5 4.6 4.6 0 0 0-.1-3.5s-1.3-.3-3.7 1.6a13 13 0 0 0-6 0C6.6 2.1 5.3 2.4 5.3 2.4a4.6 4.6 0 0 0-.1 3.5A5 5 0 0 0 3.8 9.4c0 4.9 3 6 6 6.3A3 3 0 0 0 9 18v3"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 5 5L20 7"/></symbol>
+    <symbol id="i-spark" viewBox="0 0 24 24"><path d="m12 2 2.3 7.7L22 12l-7.7 2.3L12 22l-2.3-7.7L2 12l7.7-2.3L12 2Z"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><path d="m8 5 11 7-11 7V5Z"/></symbol>
+    <symbol id="i-refresh" viewBox="0 0 24 24"><path d="M20 6v5h-5M4 18v-5h5M5 9a8 8 0 0 1 14-2l1 4M4 13l1 4a8 8 0 0 0 14-2"/></symbol>
+    <symbol id="i-external" viewBox="0 0 24 24"><path d="M13 4h7v7m0-7-10 10M20 14v6H4V4h6"/></symbol>
+    <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 11v6m0-10h.01"/></symbol>
+  </svg>
+
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <div class="announcement"><span class="announcement-dot"></span> <span>O YugenYumi está evoluindo</span><span class="announcement-sep"></span><span class="announcement-muted">Conheça a versão de desenvolvimento <span data-version>16.6.1-dev</span></span><a href="#download">Saiba mais <svg class="ico"><use href="#i-arrow"/></svg></a></div>
+
+  <header class="site-header" id="topo">
+    <nav class="nav-shell wrap" aria-label="Navegação principal">
+      <a class="brand" href="#topo" aria-label="YugenYumi Client, início">
+        <span class="brand-icon" aria-hidden="true"><img src="assets/yugenyumi-symbol.png" width="40" height="40" alt=""></span>
+        <span class="brand-text">YUGEN<span>YUMI</span><small>CLIENT / 1.8.9</small></span>
+      </a>
+      <div class="nav-links" id="primary-navigation">
+        <a href="#recursos">Recursos</a>
+        <a href="#experiencia">Experiência</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#perguntas">FAQ</a>
+      </div>
+      <div class="nav-actions">
+        <a class="nav-github" data-repo-link href="https://github.com/carlosvcl/yugenyumi-site" target="_blank" rel="noopener noreferrer" aria-label="Repositório no GitHub"><svg class="ico"><use href="#i-github"/></svg></a>
+        <a class="button button-small button-outline nav-cta" href="#download">Baixar Client <svg class="ico"><use href="#i-arrow-up"/></svg></a>
+      </div>
+      <button class="mobile-toggle" id="mobile-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" aria-label="Abrir menu"><span></span><span></span><span></span></button>
+    </nav>
+  </header>
+
+  <main id="conteudo">
+    <section class="hero wrap" aria-labelledby="hero-title">
+      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="eyebrow-spark">✦</span> MINECRAFT JAVA 1.8.9 <span class="eyebrow-divider"></span> WINDOWS 64-BIT</div>
+        <h1 id="hero-title">Seu Minecraft.<br><span>No seu estilo.</span></h1>
+        <p>Um Launcher próprio, HUDs personalizáveis e uma interface feita para quem quer uma experiência única no Minecraft 1.8.9. Conheça o projeto por dentro, com capturas reais.</p>
+        <div class="hero-ctas">
+          <a class="button button-primary" href="#download"><svg class="ico"><use href="#i-download"/></svg> Conhecer o download <svg class="ico button-arrow"><use href="#i-arrow"/></svg></a>
+          <a class="button button-soft" href="#experiencia">Explorar o Client <svg class="ico"><use href="#i-arrow-up"/></svg></a>
+        </div>
+        <div class="hero-facts"><span><svg class="ico"><use href="#i-check"/></svg> Interface personalizada</span><span><svg class="ico"><use href="#i-check"/></svg> HUDs configuráveis</span><span><svg class="ico"><use href="#i-check"/></svg> Em desenvolvimento</span></div>
+      </div>
+
+      <div class="hero-product hero-real" aria-label="Captura real do Launcher YugenYumi">
+        <div class="hero-orbit orbit-one" aria-hidden="true"></div><div class="hero-orbit orbit-two" aria-hidden="true"></div>
+        <div class="hero-capture-shell">
+          <div class="capture-bar"><span><span class="live-dot"></span> POR DENTRO DO LAUNCHER</span><span>CAPTURA HISTÓRICA · REFERÊNCIA</span></div>
+          <button class="hero-capture-open" type="button" id="hero-capture-open" aria-label="Ampliar captura da tela inicial">
+            <img id="hero-capture-image" src="assets/screenshots/inicio.webp" width="1919" height="1029" fetchpriority="high" alt="Captura real da tela inicial do YugenYumi Launcher, com novidades, entrada Microsoft e ambiente" />
+            <span class="capture-zoom"><svg class="ico"><use href="#i-external"/></svg> Ampliar</span>
+          </button>
+          <div class="capture-rail" aria-label="Selecionar demonstração">
+            <button type="button" class="capture-tab active" data-hero-shot="0" aria-pressed="true"><span>01</span> Início</button>
+            <button type="button" class="capture-tab" data-hero-shot="1" aria-pressed="false"><span>02</span> Módulos</button>
+            <button type="button" class="capture-tab" data-hero-shot="9" aria-pressed="false"><span>03</span> Personalização</button>
+          </div>
+        </div>
+        <div class="hero-real-caption"><span class="caption-pip"></span> Interface real enviada pelo desenvolvedor <span>·</span> Mais imagens na <a href="#galeria">galeria <svg class="ico"><use href="#i-arrow"/></svg></a></div>
+      </div>
+      <div class="hero-bottom-decoration" aria-hidden="true"></div>
+    </section>
+
+    <section class="mini-strip" aria-label="Destaques"><div class="strip-track"><span>PERSONALIZAÇÃO</span><b>✦</b><span>HUD EDITOR</span><b>✦</b><span>KEYSTROKES</span><b>✦</b><span>WALLPAPERS</span><b>✦</b><span>CONTROL CENTER</span><b>✦</b><span>MINECRAFT 1.8.9</span></div></section>
+
+    <section class="section wrap" id="recursos" aria-labelledby="resources-title">
+      <div class="section-heading reveal"><div><span class="section-kicker"><span class="kicker-line"></span> O DIFERENCIAL</span><h2 id="resources-title">Não é só jogar.<br><span>É jogar do seu jeito.</span></h2></div><p>Mais controle, mais identidade e menos distrações. Recursos projetados para fazer o YugenYumi ser realmente seu.</p></div>
+      <div class="features-grid">
+        <article class="feature feature-large reveal"><div class="feature-header"><span class="feature-icon"><svg class="ico"><use href="#i-move"/></svg></span><span class="feature-index">01 / PERSONALIZAÇÃO</span></div><h3>HUD Editor de verdade.</h3><p>Organize informações na tela, arraste componentes e ajuste tamanho, visibilidade e aparência, com configurações persistentes.</p><div class="hud-art" aria-hidden="true"><div class="hud-art-grid"></div><div class="hud-art-box box-fps">FPS <b>144</b><i class="handle"></i></div><div class="hud-art-box box-coord">XYZ <b>128 / 64 / 232</b></div><div class="hud-art-box box-wasd"><span>W</span><span>A</span><span>S</span><span>D</span><small>SPACE</small></div><span class="hud-art-guide v-guide"></span><span class="hud-art-guide h-guide"></span></div></article>
+        <article class="feature reveal"><div class="feature-header"><span class="feature-icon"><svg class="ico"><use href="#i-sliders"/></svg></span><span class="feature-index">02 / CONTROLE</span></div><h3>Control Center.</h3><p>Mods, HUDs e configurações organizados em uma interface dark glass, clara e prática.</p><div class="feature-foot"><span>MODS & CONFIGURAÇÕES</span><svg class="ico"><use href="#i-arrow-up"/></svg></div></article>
+        <article class="feature reveal"><div class="feature-header"><span class="feature-icon"><svg class="ico"><use href="#i-layers"/></svg></span><span class="feature-index">03 / IMERSÃO</span></div><h3>Wallpapers que combinam.</h3><p>Escolha entre fundos estáticos de alta qualidade com troca integrada ao menu do jogo.</p><div class="feature-foot"><span>VISUAL INTEGRADO</span><svg class="ico"><use href="#i-arrow-up"/></svg></div></article>
+        <article class="feature reveal"><div class="feature-header"><span class="feature-icon"><svg class="ico"><use href="#i-mouse"/></svg></span><span class="feature-index">04 / PVP</span></div><h3>O essencial à vista.</h3><p>Keystrokes, CPS, coordenadas e outras informações úteis para acompanhar cada partida.</p><div class="feature-foot"><span>INFORMAÇÃO EM TEMPO REAL</span><svg class="ico"><use href="#i-arrow-up"/></svg></div></article>
+      </div>
+    </section>
+
+    <section class="section experience-section" id="experiencia" aria-labelledby="experience-title">
+      <div class="wrap experience-layout">
+        <div class="experience-copy reveal"><span class="section-kicker"><span class="kicker-line"></span> FEITO PARA VOCÊ</span><h2 id="experience-title">Sua tela.<br><span>Suas regras.</span></h2><p>Uma experiência personalizável que acompanha você do menu principal ao momento do PvP.</p><div class="experience-points"><div><span class="point-check"><svg class="ico"><use href="#i-check"/></svg></span><span><strong>Edite com liberdade</strong><small>Posição, escala e aparência dos HUDs.</small></span></div><div><span class="point-check"><svg class="ico"><use href="#i-check"/></svg></span><span><strong>Configure uma vez</strong><small>Preferências salvas entre sessões.</small></span></div><div><span class="point-check"><svg class="ico"><use href="#i-check"/></svg></span><span><strong>Interface sem excessos</strong><small>Dark glass e azul apenas nos detalhes.</small></span></div></div><a class="text-link" href="#galeria">Veja as telas reais <svg class="ico"><use href="#i-arrow"/></svg></a></div>
+        <div class="live-demo reveal"><div class="demo-header"><span class="demo-head-label"><span class="live-dot"></span> INTERAÇÃO DE EXEMPLO</span><span class="demo-head-right">VISUAL CONCEITUAL</span></div><div class="demo-screen"><div class="demo-landscape"></div><div class="demo-shade"></div><div class="crosshair" aria-hidden="true"></div><div class="demo-hud demo-fps" id="demo-fps">FPS <b>144</b></div><div class="demo-hud demo-xyz" id="demo-xyz">XYZ <b>128 / 64 / 232</b></div><div class="demo-keys" id="demo-keys"><div class="key-top"><span>W</span></div><div class="key-row"><span>A</span><span>S</span><span>D</span></div><div class="key-mouse"><span>LMB <small>0 CPS</small></span><span>RMB <small>0 CPS</small></span></div><div class="key-space"></div></div><div class="demo-mini-label">HUD PREVIEW</div></div><div class="demo-toolbar"><div class="toolbar-caption"><span>TESTE OS CONTROLES</span><small>Esta demonstração altera apenas a prévia do site.</small></div><div class="toggle-list"><label class="toggle-row"><span><svg class="ico"><use href="#i-grid"/></svg> Keystrokes</span><input type="checkbox" data-demo-target="demo-keys" checked><span class="toggle-switch"></span></label><label class="toggle-row"><span><svg class="ico"><use href="#i-monitor"/></svg> FPS</span><input type="checkbox" data-demo-target="demo-fps" checked><span class="toggle-switch"></span></label><label class="toggle-row"><span><svg class="ico"><use href="#i-move"/></svg> Coordenadas</span><input type="checkbox" data-demo-target="demo-xyz" checked><span class="toggle-switch"></span></label></div></div></div>
+      </div>
+    </section>
+
+    <section class="section wrap gallery-section" id="galeria" aria-labelledby="gallery-title">
+      <div class="section-heading reveal"><div><span class="section-kicker"><span class="kicker-line"></span> TOUR DO LAUNCHER</span><h2 id="gallery-title">Agora com o <span>YugenYumi real.</span></h2></div><p>Explore o projeto por completo: Launcher, menu principal, seletor de wallpapers, Control Center, HUD Editor e telas técnicas. Clique para ampliar cada captura.</p></div>
+      <div class="gallery-topline reveal"><span class="gallery-verified"><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg> 27 capturas reais do projeto</span><span>Registros de testes 9.x e 16.0.0-dev · Projeto atual: <span data-version>16.6.1-dev</span></span></div>
+      <div class="gallery-filterbar reveal" role="group" aria-label="Filtrar capturas de tela"><button type="button" class="gallery-filter active" data-filter="todos" aria-pressed="true">Todas as telas</button>
+<button type="button" class="gallery-filter" data-filter="interface" aria-pressed="false">Interface</button>
+<button type="button" class="gallery-filter" data-filter="recursos" aria-pressed="false">Recursos</button>
+<button type="button" class="gallery-filter" data-filter="personalizacao" aria-pressed="false">Personalização</button>
+<button type="button" class="gallery-filter" data-filter="sistema" aria-pressed="false">Sistema</button>
+<button type="button" class="gallery-filter" data-filter="jogo" aria-pressed="false">No jogo</button></div>
+      <div class="shot-grid" id="shot-grid">
+<a href="assets/screenshots/inicio.webp" class="shot-card reveal" data-category="interface" data-gallery-index="0" aria-label="Ver imagem ampliada: Início do Launcher">
+  <span class="shot-media"><img src="assets/screenshots/inicio-thumb.webp" loading="lazy" decoding="async" width="960" height="515" alt="Tela Início do Launcher do YugenYumi Launcher" /><span class="shot-expand"><svg class="ico" aria-hidden="true"><use href="#i-external"/></svg></span></span>
+  <span class="shot-text"><span><strong>Início do Launcher</strong><small>A tela inicial com acesso à conta, novidades e ambiente do jogo.</small></span><span class="shot-number">01</span></span>
+</a>
+<a href="assets/screenshots/modulos.webp" class="shot-card reveal" data-category="recursos" data-gallery-index="1" aria-label="Ver imagem ampliada: Módulos">
+  <span class="shot-media"><img src="assets/screenshots/modulos-thumb.webp" loading="lazy" decoding="async" width="960" height="515" alt="Tela Módulos do YugenYumi Launcher" /><span class="shot-expand"><svg class="ico" aria-hidden="true"><use href="#i-external"/></svg></span></span>
+  <span class="shot-text"><span><strong>Módulos</strong><small>Organização de HUDs e recursos por categoria, com controles individuais.</small></span><span class="shot-number">02</span></span>
+</a>
+<a href="assets/screenshots/servidores.webp" class="shot-card reveal" data-category="recursos" data-gallery-index="2" aria-label="Ver imagem ampliada: Servidores">
+  <span class="shot-media"><img src="assets/screenshots/servidores-thumb.webp" loading="lazy" decoding="async" width="960" height="515" alt="Tela Servidores do YugenYumi Launcher" /><span class="shot-expand"><svg class="ico" aria-hidden="true"><use href="#i-external"/></svg></span></span>
+  <span class="shot-text"><span><strong>Servidores</strong><small>Atalhos e gerenciamento dos servidores favoritos.</small></span><span class="shot-number">03</span></span>
+</a>
+<a href="assets/screenshots/instalacoes.webp" class="shot-card reveal" data-category="sistema" data-gallery-index="3" aria-label="Ver imagem ampliada: Instalações">
+  <span class="shot-media"><img src="assets/screenshots/instalacoes-thumb.webp" loading="lazy" decoding="async" width="960" height="515" alt="Tela Instalações do YugenYumi Launcher" /><span class="shot-expand"><svg class="ico" aria-hidden="true"><use href="#i-external"/></svg></span></span>
+  <span class="shot-text"><span><strong>Instalações</strong><small>Preparação do Minecraft 1.8.9, Java 8 e runtime.</small></span><span class="shot-number">04</span></span>
+</a>
+<a href="assets/screenshots/cosmeticos.webp" class="shot-card reveal" data-category="recursos" data-gallery-index="4" aria-label="Ver imagem ampliada: Cosméticos">
+  <span class="shot-media"><img src="assets/screenshots/cosmeticos-thumb.webp" loading="lazy" decoding="async" width="960" height="515" alt="Tela Cosméticos do YugenYumi Launcher" /><span class="shot-expand"><svg class="ico" aria-hidden="true"><use href="#i-external"/></svg></span></span>
+  <span class="shot-text"><span><strong>Cosméticos</strong><small>Área dedicada aos cosméticos e prévia do jogador.</small></span><span class="shot-number">05</span></span>
+</a>
+<a href="assets/screenshots/perfis.webp" class="shot-card reveal" data-category="personalizacao" data-gallery-index="5" aria-label="Ver imagem ampliada: Perfis">
+  <span class="shot-media"><img src="assets/screenshots/perfis-thumb.webp" loading="lazy" decoding="async" width="960" height="515" alt="Tela Perfis do YugenYumi Launcher" /><span class="shot-expand"><svg class="ico" aria-hidden="true"><use href="#i-external"/></svg></span></span>
+  <span class="shot-text"><span><strong>Perfis</strong><small>Configurações personalizadas e seleção de perfis locais.</small></span><span class="shot-number">06</span></span>
+</a>
+<a href="assets/screenshots/capturas.webp" class="shot-card reveal" data-category="recursos" data-gallery-index="6" aria-label="Ver imagem ampliada: Capturas de tela">
+  <span class="shot-media"><img src="assets/screenshots/capturas-thumb.webp" loading="lazy" decoding="async" width="960" height="515" alt="Tela Capturas de tela do YugenYumi Launcher" /><span class="shot-expand"><svg class="ico" aria-hidden="true"><use href="#i-external"/></svg></span></span>
+  <span class="shot-text"><span><strong>Capturas de tela</strong><small>Galeria de screenshots dentro do próprio Launcher.</small></span><span class="shot-number">07</span></span>
+</a>
+<a href="assets/screenshots/contas.webp" class="shot-card reveal" data-category="personalizacao" data-gallery-index="7" aria-label="Ver imagem ampliada: Contas">
+  <span class="shot-media"><img src="assets/screenshots/contas-thumb.webp" loading="lazy" decoding="async" width="960" height="515" alt="Tela Contas do YugenYumi Launcher" /><span class="shot-expand"><svg class="ico" aria-hidden="true"><use href="#i-external"/></svg></span></span>
+  <span class="shot-text"><span><strong>Contas</strong><small>Gerenciamento local de contas e sessões.</small></span><span class="shot-number">08</span></span>
+</a>
+<a href="assets/screenshots/diagnostico.webp" class="shot-card reveal" data-category="sistema" data-gallery-index="8" aria-label="Ver imagem ampliada: Diagnóstico">
+  <span class="shot-media"><img src="assets/screenshots/diagnostico-thumb.webp" loading="lazy" decoding="async" width="960" height="515" alt="Tela Diagnóstico do YugenYumi Launcher" /><span class="shot-expand"><svg class="ico" aria-hidden="true"><use href="#i-external"/></svg></span></span>
+  <span class="shot-text"><span><strong>Diagnóstico</strong><small>Verificação do Java, runtime, hooks e registros.</small></span><span class="shot-number">09</span></span>
+</a>
+<a href="assets/screenshots/config-geral.webp" class="shot-card reveal" data-category="personalizacao" data-gallery-index="9" aria-label="Ver imagem ampliada: Configurações gerais">
+  <span class="shot-media"><img src="assets/screenshots/config-geral-thumb.webp" loading="lazy" decoding="async" width="960" height="515" alt="Tela Configurações gerais do YugenYumi Launcher" /><span class="shot-expand"><svg class="ico" aria-hidden="true"><use href="#i-external"/></svg></span></span>
+  <span class="shot-text"><span><strong>Configurações gerais</strong><small>Experiência visual e comportamento do Launcher.</small></span><span class="shot-number">10</span></span>
+</a>
+<a href="assets/screenshots/config-jogo.webp" class="shot-card reveal" data-category="personalizacao" data-gallery-index="10" aria-label="Ver imagem ampliada: Configurações do jogo">
+  <span class="shot-media"><img src="assets/screenshots/config-jogo-thumb.webp" loading="lazy" decoding="async" width="960" height="515" alt="Tela Configurações do jogo do YugenYumi Launcher" /><span class="shot-expand"><svg class="ico" aria-hidden="true"><use href="#i-external"/></svg></span></span>
+  <span class="shot-text"><span><strong>Configurações do jogo</strong><small>Memória RAM e resolução inicial do Minecraft.</small></span><span class="shot-number">11</span></span>
+</a>
+<a href="assets/screenshots/config-java.webp" class="shot-card reveal" data-category="personalizacao" data-gallery-index="11" aria-label="Ver imagem ampliada: Configurações do Java">
+  <span class="shot-media"><img src="assets/screenshots/config-java-thumb.webp" loading="lazy" decoding="async" width="960" height="515" alt="Tela Configurações do Java do YugenYumi Launcher" /><span class="shot-expand"><svg class="ico" aria-hidden="true"><use href="#i-external"/></svg></span></span>
+  <span class="shot-text"><span><strong>Configurações do Java</strong><small>Gerenciamento do Java 8 e argumentos da JVM.</small></span><span class="shot-number">12</span></span>
+</a>
+<a href="assets/screenshots/config-runtime.webp" class="shot-card reveal" data-category="sistema" data-gallery-index="12" aria-label="Ver imagem ampliada: Configurações de runtime">
+  <span class="shot-media"><img src="assets/screenshots/config-runtime-thumb.webp" loading="lazy" decoding="async" width="960" height="515" alt="Tela Configurações de runtime do YugenYumi Launcher" /><span class="shot-expand"><svg class="ico" aria-hidden="true"><use href="#i-external"/></svg></span></span>
+  <span class="shot-text"><span><strong>Configurações de runtime</strong><small>Opções de carregamento e modo seguro.</small></span><span class="shot-number">13</span></span>
+</a>
+<a href="assets/screenshots/config-compatibilidade.webp" class="shot-card reveal" data-category="sistema" data-gallery-index="13" aria-label="Ver imagem ampliada: Compatibilidade">
+  <span class="shot-media"><img src="assets/screenshots/config-compatibilidade-thumb.webp" loading="lazy" decoding="async" width="960" height="515" alt="Tela Compatibilidade do YugenYumi Launcher" /><span class="shot-expand"><svg class="ico" aria-hidden="true"><use href="#i-external"/></svg></span></span>
+  <span class="shot-text"><span><strong>Compatibilidade</strong><small>Painel de integração opcional com OptiFine.</small></span><span class="shot-number">14</span></span>
+</a>
+<a href="assets/screenshots/config-developer.webp" class="shot-card reveal" data-category="sistema" data-gallery-index="14" aria-label="Ver imagem ampliada: Developer">
+  <span class="shot-media"><img src="assets/screenshots/config-developer-thumb.webp" loading="lazy" decoding="async" width="960" height="515" alt="Tela Developer do YugenYumi Launcher" /><span class="shot-expand"><svg class="ico" aria-hidden="true"><use href="#i-external"/></svg></span></span>
+  <span class="shot-text"><span><strong>Developer</strong><small>Ferramentas locais de diagnóstico e registros.</small></span><span class="shot-number">15</span></span>
+</a>
+<a href="assets/screenshots/menu-wallpaper-01.webp" class="shot-card reveal" data-category="jogo" data-gallery-index="15" aria-label="Ver imagem ampliada: Menu principal com wallpaper 01">
+  <span class="shot-media"><img src="assets/screenshots/menu-wallpaper-01-thumb.webp" loading="lazy" decoding="async" width="960" height="540" alt="Menu principal do YugenYumi com wallpaper panorâmico de montanhas e cachoeira" /><span class="shot-expand"><svg class="ico" aria-hidden="true"><use href="#i-external"/></svg></span></span>
+  <span class="shot-text"><span><strong>Menu principal · Wallpaper 01</strong><small>O menu do jogo com a identidade visual do client e fundo cinematográfico.</small></span><span class="shot-number">16</span></span>
+</a>
+<a href="assets/screenshots/wallpaper-selector.webp" class="shot-card reveal" data-category="jogo" data-gallery-index="16" aria-label="Ver imagem ampliada: Seletor de wallpapers">
+  <span class="shot-media"><img src="assets/screenshots/wallpaper-selector-thumb.webp" loading="lazy" decoding="async" width="960" height="540" alt="Janela do seletor de wallpapers do YugenYumi com cinco opções de fundo" /><span class="shot-expand"><svg class="ico" aria-hidden="true"><use href="#i-external"/></svg></span></span>
+  <span class="shot-text"><span><strong>Seletor de wallpapers</strong><small>Escolha de cinco fundos integrados diretamente ao menu principal.</small></span><span class="shot-number">17</span></span>
+</a>
+<a href="assets/screenshots/menu-wallpaper-02.webp" class="shot-card reveal" data-category="jogo" data-gallery-index="17" aria-label="Ver imagem ampliada: Menu principal com wallpaper 02">
+  <span class="shot-media"><img src="assets/screenshots/menu-wallpaper-02-thumb.webp" loading="lazy" decoding="async" width="960" height="540" alt="Menu principal do YugenYumi com wallpaper noturno de ilhas flutuantes" /><span class="shot-expand"><svg class="ico" aria-hidden="true"><use href="#i-external"/></svg></span></span>
+  <span class="shot-text"><span><strong>Menu principal · Wallpaper 02</strong><small>Outra variação real do menu, com visual noturno e cenário de fantasia.</small></span><span class="shot-number">18</span></span>
+</a>
+<a href="assets/screenshots/ingame-hud.webp" class="shot-card reveal" data-category="jogo" data-gallery-index="18" aria-label="Ver imagem ampliada: HUD no jogo">
+  <span class="shot-media"><img src="assets/screenshots/ingame-hud-thumb.webp" loading="lazy" decoding="async" width="960" height="540" alt="Captura dentro do Minecraft com HUDs de FPS, CPS, coordenadas, ping e keystrokes" /><span class="shot-expand"><svg class="ico" aria-hidden="true"><use href="#i-external"/></svg></span></span>
+  <span class="shot-text"><span><strong>HUD em partida</strong><small>FPS, CPS, coordenadas, ping, sessão e keystrokes diretamente em jogo.</small></span><span class="shot-number">19</span></span>
+</a>
+<a href="assets/screenshots/control-center-hud.webp" class="shot-card reveal" data-category="jogo" data-gallery-index="19" aria-label="Ver imagem ampliada: Control Center in-game">
+  <span class="shot-media"><img src="assets/screenshots/control-center-hud-thumb.webp" loading="lazy" decoding="async" width="960" height="540" alt="Control Center 8.0 do YugenYumi aberto dentro do jogo mostrando módulos HUD" /><span class="shot-expand"><svg class="ico" aria-hidden="true"><use href="#i-external"/></svg></span></span>
+  <span class="shot-text"><span><strong>Control Center 8.0</strong><small>Painel de módulos dentro do jogo, com categorias, busca e estados visuais.</small></span><span class="shot-number">20</span></span>
+</a>
+<a href="assets/screenshots/hud-editor.webp" class="shot-card reveal" data-category="jogo" data-gallery-index="20" aria-label="Ver imagem ampliada: HUD Editor 9.0">
+  <span class="shot-media"><img src="assets/screenshots/hud-editor-thumb.webp" loading="lazy" decoding="async" width="960" height="540" alt="HUD Editor 9.0 do YugenYumi com elementos reposicionáveis sobre o jogo" /><span class="shot-expand"><svg class="ico" aria-hidden="true"><use href="#i-external"/></svg></span></span>
+  <span class="shot-text"><span><strong>HUD Editor 9.0</strong><small>Edição visual dos módulos, com controles de visibilidade, reset, configuração e salvamento.</small></span><span class="shot-number">21</span></span>
+</a>
+
+<a href="assets/screenshots/inicio-16-realt.webp" class="shot-card reveal" data-category="interface" data-gallery-index="21" aria-label="Ver captura real: Início do Launcher — teste Windows">
+  <span class="shot-media"><img src="assets/screenshots/inicio-16-realt-thumb.webp" loading="lazy" decoding="async" width="960" height="540" alt="Início do Launcher — teste Windows" /><span class="shot-expand">↗</span></span>
+  <span class="shot-text"><span><strong>Início do Launcher — teste Windows</strong><small>Launcher YugenYumi 16.0.0-dev instalado e aberto no Windows</small></span><span class="shot-number">22</span></span>
+</a>
+<a href="assets/screenshots/cosmeticos-16-realt.webp" class="shot-card reveal" data-category="recursos" data-gallery-index="22" aria-label="Ver captura real: Preview 3D — teste Windows">
+  <span class="shot-media"><img src="assets/screenshots/cosmeticos-16-realt-thumb.webp" loading="lazy" decoding="async" width="960" height="540" alt="Preview 3D — teste Windows" /><span class="shot-expand">↗</span></span>
+  <span class="shot-text"><span><strong>Preview 3D — teste Windows</strong><small>Personagem visível no Launcher, ainda com acabamento e controles pendentes</small></span><span class="shot-number">23</span></span>
+</a>
+<a href="assets/screenshots/wings-dragon-16-realt.webp" class="shot-card reveal" data-category="jogo" data-gallery-index="23" aria-label="Ver captura real: Wings Dragon — teste real">
+  <span class="shot-media"><img src="assets/screenshots/wings-dragon-16-realt-thumb.webp" loading="lazy" decoding="async" width="960" height="540" alt="Wings Dragon — teste real" /><span class="shot-expand">↗</span></span>
+  <span class="shot-text"><span><strong>Wings Dragon — teste real</strong><small>Dragon no Minecraft 1.8.9; geometria ainda precisa de revisão</small></span><span class="shot-number">24</span></span>
+</a>
+<a href="assets/screenshots/wings-angel-16-realt.webp" class="shot-card reveal" data-category="jogo" data-gallery-index="24" aria-label="Ver captura real: Wings Angel — teste real">
+  <span class="shot-media"><img src="assets/screenshots/wings-angel-16-realt-thumb.webp" loading="lazy" decoding="async" width="960" height="540" alt="Wings Angel — teste real" /><span class="shot-expand">↗</span></span>
+  <span class="shot-text"><span><strong>Wings Angel — teste real</strong><small>Angel no Minecraft 1.8.9; modelo de penas ainda reprovado</small></span><span class="shot-number">25</span></span>
+</a>
+<a href="assets/screenshots/discord-16-realt.webp" class="shot-card reveal" data-category="recursos" data-gallery-index="25" aria-label="Ver captura real: Discord Rich Presence com YY">
+  <span class="shot-media"><img src="assets/screenshots/discord-16-realt-thumb.webp" loading="lazy" decoding="async" width="960" height="540" alt="Discord Rich Presence com YY" /><span class="shot-expand">↗</span></span>
+  <span class="shot-text"><span><strong>Discord Rich Presence com YY</strong><small>Ícone YY registrado e aparecendo na atividade Jogando</small></span><span class="shot-number">26</span></span>
+</a>
+<a href="assets/screenshots/setup-16-realt.webp" class="shot-card reveal" data-category="sistema" data-gallery-index="26" aria-label="Ver captura real: Setup NSIS histórico — antes">
+  <span class="shot-media"><img src="assets/screenshots/setup-16-realt-thumb.webp" loading="lazy" decoding="async" width="960" height="540" alt="Setup NSIS histórico — antes" /><span class="shot-expand">↗</span></span>
+  <span class="shot-text"><span><strong>Setup NSIS histórico — antes</strong><small>Instalador 16.0.0-dev anterior; interface clássica que a fase 16.6.1 quer substituir</small></span><span class="shot-number">27</span></span>
+</a>
+      </div>
+      <div class="gallery-bottom-note reveal"><svg class="ico" aria-hidden="true"><use href="#i-info"/></svg> <p>Estas são capturas autênticas do projeto em <strong>builds 9.0.0-dev, 9.1.0-dev e testes da 16.0.0-dev</strong>, incluindo Launcher, menu do jogo e HUDs in-game — não são imagens simuladas. A versão <span data-version>16.6.1-dev</span> continua em testes; alguns controles mostrados nas fotos podem ser experimentais ou estar indisponíveis.</p></div>
+    </section>
+    <dialog class="shot-dialog" id="shot-dialog" aria-label="Visualização ampliada das capturas">
+      <div class="dialog-head"><div><span>YUGENYUMI / LAUNCHER</span><strong id="dialog-title">Captura de tela</strong></div><button class="dialog-close" id="dialog-close" type="button" aria-label="Fechar imagem">✕</button></div>
+      <div class="dialog-image-wrap"><button class="dialog-arrow prev" id="dialog-prev" type="button" aria-label="Imagem anterior">‹</button><img id="dialog-image" alt="" width="1919" height="1029"/><button class="dialog-arrow next" id="dialog-next" type="button" aria-label="Próxima imagem">›</button></div>
+      <div class="dialog-foot"><span id="dialog-description"></span><span id="dialog-count">01 / 27</span></div>
+    </dialog>
+
+    <section class="section wrap status-section" aria-labelledby="status-title"><div class="status-panel reveal"><div class="status-intro"><span class="section-kicker"><span class="kicker-line"></span> TRANSPARÊNCIA</span><h2 id="status-title">Em evolução.<br><span>Sem promessas vazias.</span></h2><p>O YugenYumi está em desenvolvimento ativo. Preferimos apresentar os recursos como realmente estão, em vez de chamar uma função de concluída antes dos testes no jogo.</p></div><div class="status-list"><div><span class="status-indicator ready"></span><span><strong>Já fazem parte da experiência</strong><small>HUD Editor, Keystrokes, CPS, Control Center e Wallpaper Selector.</small></span></div><div><span class="status-indicator testing"></span><span><strong>Em validação e melhorias</strong><small>Preview 3D, Wings e novo instalador Windows com interface própria.</small></span></div><div><span class="status-indicator planned"></span><span><strong>Em desenvolvimento</strong><small>Perspective e Motion Blur exigem correções; Wings continuam em reformulação. Block Overlay e Ping Tag passaram nos testes anteriores.</small></span></div></div></div></section>
+
+    <section class="section wrap download-section" id="download" aria-labelledby="download-title"><div class="download-panel reveal"><div class="download-light" aria-hidden="true"></div><div class="download-content"><span class="section-kicker"><span class="kicker-line"></span> COMECE POR AQUI</span><h2 id="download-title">Pronto para conhecer<br><span>o YugenYumi?</span></h2><p>Acompanhe os builds experimentais e as novidades do Client. Os instaladores de teste são distribuídos conforme cada versão é preparada.</p><div class="download-actions"><a class="button button-primary" data-release-link href="#download" target="_blank" rel="noopener noreferrer"><svg class="ico"><use href="#i-download"/></svg> Download em preparação <svg class="ico button-arrow"><use href="#i-arrow-up"/></svg></a><a class="button button-soft" data-repo-link href="https://github.com/carlosvcl/yugenyumi-site" target="_blank" rel="noopener noreferrer"><svg class="ico"><use href="#i-github"/></svg> Acompanhar projeto</a></div><div class="download-meta"><span><svg class="ico"><use href="#i-monitor"/></svg> Windows 10/11 · 64 bits</span><span><svg class="ico"><use href="#i-info"/></svg> Build beta, sujeita a erros</span><span><svg class="ico"><use href="#i-shield"/></svg> Instalador em testes, sem assinatura digital</span></div></div><div class="download-watermark" aria-hidden="true">YY</div></div><p class="release-notice">O download público está indisponível enquanto os testes de instalação, segurança e jogo não forem concluídos.</p></section>
+
+    <section class="section wrap faq-section" id="perguntas" aria-labelledby="faq-title"><div class="section-heading reveal"><div><span class="section-kicker"><span class="kicker-line"></span> PRECISA SABER?</span><h2 id="faq-title">Perguntas <span>frequentes.</span></h2></div><p>Algumas respostas para você entender o projeto antes de instalar.</p></div><div class="faq-list reveal"><details><summary>O YugenYumi já é uma versão final?<svg class="ico"><use href="#i-chevron"/></svg></summary><p>Não. A versão <span data-version>16.6.1-dev</span> é de desenvolvimento. Algumas funções ainda estão sendo implementadas, corrigidas ou validadas no Minecraft real.</p></details><details><summary>Preciso instalar o Java manualmente?<svg class="ico"><use href="#i-chevron"/></svg></summary><p>O Launcher foi projetado para preparar o Java 8 de 64 bits e os arquivos necessários. Na primeira inicialização, é necessário acesso à internet para obter dependências que ainda não estão no cache.</p></details><details><summary>Precisa de Forge ou OptiFine?<svg class="ico"><use href="#i-chevron"/></svg></summary><p>O Client utiliza sua própria arquitetura para o Minecraft 1.8.9 e não exige Forge para os recursos integrados. A integração com OptiFine não deve ser presumida como ativa nas builds atuais.</p></details><details><summary>Por que o Windows pode mostrar um aviso ao instalar?<svg class="ico"><use href="#i-chevron"/></svg></summary><p>Os instaladores beta ainda não possuem assinatura digital de publicação. Por isso, o Windows pode apresentar alertas. Baixe apenas de uma fonte confiável e confirme os arquivos/checksums divulgados junto à versão.</p></details><details><summary>Quais recursos ainda estão em desenvolvimento?<svg class="ico"><use href="#i-chevron"/></svg></summary><p>Perspective, Motion Blur, Wings e Preview 3D ainda precisam de melhorias e validação na 16.6.1-dev. Block Overlay, Armor Status, Item Status e outros módulos foram aprovados nos testes Windows anteriores.</p></details><details><summary>O YugenYumi é um projeto oficial do Minecraft?<svg class="ico"><use href="#i-chevron"/></svg></summary><p>Não. YugenYumi é um projeto independente, sem afiliação ou endosso da Mojang Studios ou da Microsoft.</p></details></div></section>
+  </main>
+
+  <footer class="site-footer"><div class="wrap footer-main"><div><a class="brand footer-brand" href="#topo" aria-label="Voltar ao início"><span class="brand-icon" aria-hidden="true"><img src="assets/yugenyumi-symbol.png" width="40" height="40" alt=""></span><span class="brand-text">YUGEN<span>YUMI</span><small>CLIENT / 1.8.9</small></span></a><p>Seu Minecraft. No seu estilo.<br>Feito com atenção aos detalhes.</p></div><div class="footer-nav"><div><strong>NAVEGAÇÃO</strong><a href="#recursos">Recursos</a><a href="#experiencia">Experiência</a><a href="#galeria">Galeria</a><a href="#perguntas">Perguntas</a></div><div><strong>PROJETO</strong><a data-release-link href="#download" target="_blank" rel="noopener noreferrer">Releases <svg class="ico"><use href="#i-arrow-up"/></svg></a><a data-repo-link href="https://github.com/carlosvcl/yugenyumi-site" target="_blank" rel="noopener noreferrer">GitHub <svg class="ico"><use href="#i-arrow-up"/></svg></a><a href="#download">Instalação</a></div></div></div><div class="wrap footer-bottom"><span>© <span id="copyright-year">2026</span> YugenYumi Client. Projeto independente.</span><span>Não afiliado à Mojang Studios ou Microsoft.</span><a href="#topo">Voltar ao topo ↑</a></div></footer>
+</body>
+</html>
